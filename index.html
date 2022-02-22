@@ -1,51 +1,426 @@
-<!doctype html>
 
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-<!--
+  <!--
 █▀▀▄ █░░█ █▀▄▀█ █▀▄▀█ █░░█
 █░░█ █░░█ █░▀░█ █░▀░█ █▄▄█
 ▀▀▀░ ░▀▀▀ ▀░░░▀ ▀░░░▀ ▄▄▄█
 
-site by @dummy_finance team |  https://dummy.finance |  dummyfinance@protonmail.com
+TEMPORARY SITE!!! SHITTY SOURCE CODE
+@dummy_finance team |  https://dummy.finance |  dummyfinance@protonmail.com
 -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>dummy ☻ finance</title>
-  <meta name="description" content="dummy finance. only on the telos blockchain">
-  <meta name="author" content="dummy">
-  <meta property="og:title" content="dummy ☻">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://dummy.finance/">
-  <meta property="og:description" content="dummy finance. only on the telos blockchain">
-  <meta property="og:image" content="dummy.png">
-  <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="manifest" href="asset-manifest.json"/>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>dummy ☻ finance</title>
+<meta name="description" content="dummy finance. only on the telos blockchain">
+<meta name="author" content="dummy">
+<meta property="og:title" content="dummy ☻">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dummy.finance/">
+<meta property="og:description" content="dummy finance. only on the telos blockchain">
+<meta property="og:image" content="dummy.png">
+<link rel="icon" href="favicon.ico">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="asset-manifest.json"/>
+  <style type="text/css">
+
+       html, html a {
+           -webkit-font-smoothing: antialiased !important;
+           -moz-osx-font-smoothing: grayscale !important;
+           text-rendering: optimizeLegibility !important;
+           font-smoothing: antialiased !important;
+       }
+
+
+       table {border-collapse:separate;}
+
+
+       #outlook a {padding:0;}
+
+
+       .ReadMsgBody{width:100%;} .ExternalClass{width:100%;}
+
+
+       .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+
+
+       .ExternalClass * {line-height: 180%;}
+
+
+       body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+
+
+       table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;}
+
+
+       img{-ms-interpolation-mode:bicubic;}
+
+
+       div[id*=":"] ul, ol {padding-left: 0px}
+       li, .gs li {margin-left: 0px;}
+
+
+       *[class].a6S {display: none !important; opacity: 0 !important; visibility: hidden !important; left: -99999px !important; top: -99999px !important;}
+       *[class].a5q {display: none !important; opacity: 0 !important; visibility: hidden !important; left: -99999px !important; top: -99999px !important;}
+       * [dir~="ltr"] {display: none !important; visibility: hidden !important; opacity: 0 !important; left: -99999px !important; top: -99999px !important;}
+
+
+       span.preheader { display: none !important; }
+
+
+       body{height:100% !important; Margin:0 !important; padding:0 !important; width:100% !important; background: #ffffff; text-rendering: optimizeLegibility; overflow-x: hidden; text-align: center;}
+       img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+
+
+       a, a:link, a:visited, a:hover, a:active {color: #ffffff !important; text-decoration: none !important; border: 0;}
+
+
+       a[x-apple-data-detectors] {
+           color: #ffffff !important;
+           text-decoration: none !important;
+           font-size: inherit !important;
+           font-family: inherit !important;
+           font-weight: inherit !important;
+           line-height: inherit !important;
+       }
+       .appleLinks a {color: #ffffff !important; text-decoration: none !important;}
+
+             body {}
+             table[class="outer-table"]{width: 100%; max-width: 820px;}
+             table[class="inner-table"]{width: 85%; max-width: 700px;}
+             span.mobile-only, span.mobile-only * {display: none; Margin-left: -9999; width: 0; height: 0; max-height: 0; visibility: hidden; line-height: 0; font-size: 0;}
+             h1, h2, h3, h4, h5, h6, p { font-family:'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #FFFFFF; font-weight: 500; Margin-top:0; Margin-bottom:0;}
+             p { letter-spacing: 0.08em; }
+             .event-subheader {color: #FFFFFF !important; letter-spacing: 0.2em; font-size: 16px !important; line-height: 13px; text-align: center;}
+             .panelist-name {color: #FFFFFF; font-weight: 800; font-size:20px; line-height:20px; margin-top: 30px; margin-bottom: 19px; text-align: left;}
+             .panelist-title {color: #FFFFFF; font-size:13px; line-height:13px; letter-spacing: 0.08em; margin-bottom: 7px; text-align: left;}
+             .panelist-company {color: #8a959e; font-size:13px; line-height:13px; letter-spacing: 0.08em; text-align: left;}
+             .event-paragraphs p {margin-bottom: 34px; font-size: 15px; line-height: 26px; letter-spacing: 0.04em;}
+             .event-paragraphs p:last-child {margin-bottom: 0 !important;}
+             .event-paragraphs a {color: #1eeb92 !important; font-weight: bold !important;}
+             .event-info-table-small .event-paragraphs p, .image-gallery-module .event-paragraphs p, .video-playback-module .event-paragraphs p{text-align: center;}
+             .detail-desc { color: #8a959e; font-weight: 800; letter-spacing: 0.16em; font-size: 10px; Margin-bottom: 16px;}
+             .detail-one { color: #1eeb92; letter-spacing: 0.2em; font-size: 13px; line-height: 13px; font-weight: 700; Margin-bottom: 10px;}
+             .detail-two {font-size: 13px; letter-spacing: 0.21em;}
+             .detail-two a, .detail-two span {color:#ffffff !important;}
+             .blackout {background: hsla(0, 0%, 0%, 0.55);padding: 0px;}
+             .cta-text {font-weight: 800; font-size: 12px; Margin-top: 3px;}
+             .text-below-cta, .footer-header { font-weight: 600; letter-spacing: 0.14em;font-size: 13px; }
+             .text-below-cta {color:#8a959e;} .footer-header {color:#ffffff;}
+             .footer-links { font-family:'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 500; margin: 0; font-size:13px; line-height:13px;}
+
+             .invision-offer-bottom-content .tagline { font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-style: italic; }
+             .invision-offer-bottom-content p {margin-bottom: 0;  }
+
+             a.invision-offer-cta { font-family:'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; letter-spacing: 0.1em; font-weight: 700; border: 1px solid hsla(0, 0%, 100%, 0); }
+
+             .background-animation,* [summary="background-animation"]{
+                 background: url(images/dummy-bg-1x.png?t=1507583985804) top center repeat;
+                 -webkit-animation: backanim 45s linear infinite;
+                 width:100%;
+                 height:100%;
+             }
+             @-webkit-keyframes backanim {
+               0% {background-position: 0px 0px;}
+               100% {background-position: 1280px 1220px;}
+             }
+  </style>
+
+  <meta content="HubSpot" name="generator">
+  <meta content="http://get.invisionapp.com/-temporary-slug-45466d9a-8518-444c-add3-9f11e94dabf0" property="og:url">
 </head>
-<body>
-  <div class="dummywrapper">
-  <img class="dummylogo" src="images/dummy.gif" alt="dummy finance">
-  </div>
-  <div class="dummylinks">
-    <p>~~~WHAT'S NEW~~~~</p>
-    <a style="text-decoration:none;" href="https://dexscreener.com/telos/0xf5e3785f5bbe0520a059d94590f0135b8ecbe894"><h2>BUY HAPPY☻ WITH ZAPPY</a> <p sytle="color:white !important">☻</p></h2>
-    <br><br>
-    <a style="text-decoration:none;" href="https://swap.dummy.finance"><h2>dummy swap</a> <p sytle="color:white !important">☻</p></h2>
-    <br>
-    <p>~~~S☻CIALS~~~~</p>
-    <a href="https://discord.gg/THN8nmYwJe">☻ Discord</a>
-    <br><br>
-    <a href="https://twitter.com/dummy_finance">☻ Twitter</a>
-    <br><br>
-    <a href="https://t.me/dummyfinance">☻ Telegram</a>
-    <br><br>
-    <a href="https://dexscreener.com/telos/0x14c5ce09a3a313c78e5a4354f88a97b2414c39e1">☻ DexScreener</a>
-    <br><br><br><br><br><br>
-    <img src="https://hitwebcounter.com/counter/counter.php?page=7946337&style=0025&nbdigits=5&type=page&initCount=1000" title="Free Counter" Alt="web counter"   border="0" /></a>
-    </div>
-  <script src="js/scripts.js"></script>
+<body bgcolor="#000000" class="preevent invitation" style="background:#0b131b repeat top center">
+  <table align="center" border="0" cellpadding="0" cellspacing="0" class="background-animation" style="background:url(images/dummy-bg-1x.png?t=1507583985804) top center repeat; -webkit-animation:backanim 45s linear infinite; width:100%; height:100%" summary="background-animation" width="100%">
+    <tbody>
+      <tr>
+        <td>
+          <!-- START LIQUID WRAPPER -->
+          <!--[if mso]>
+              <table cellpadding="0" cellspacing="0" border="0" style="padding:0px;margin:0px;width:100%;">
+                <tr>
+                  <td colspan="3" style="padding:0px;margin:0px;font-size:20px;height:20px;" height="20">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td style="padding:0px;margin:0px;">&nbsp;</td>
+                  <td style="padding:0px;margin:0px;" width="820">
+                  <![endif]-->
+          <table align="center" border="0" cellpadding="0" cellspacing="0" class="header-module" summary="header-module" width="100%">
+            <tbody>
+              <tr>
+                <td align="center" valign="top">
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" class="outer-table" style="width:100%; max-width:820px; Margin:0 auto" summary="outer-table" width="100%">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <table align="center" border="0" cellpadding="0" cellspacing="0" class="inner-table" style="width:85.37%; max-width:700px; Margin:0 auto" summary="inner-table" width="85.37%">
+                            <tbody>
+                              <tr>
+                                <td></td>
+                              </tr>
+                              <tr class="spacer-1" style="height:115px; padding: 0 !important; margin: 0 !important; font-size: 0 !important; line-height: 0 !important;">
+                                <td>&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p align="center" class="event-subheader" style="margin-bottom: 1em; font-family:'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:500; Margin-top:0; Margin-bottom:0; color:#1eeb92; letter-spacing:0.2em; font-size:13px; line-height:13px; text-align:center"><strong>dummy</strong> finance</p>
+                                </td>
+                              </tr>
+                              <!-- <tr class="spacer-7" style="height:75px; padding: 0 !important; margin: 0 !important; font-size: 0 !important; line-height: 0 !important;">
+                                <td>&nbsp;</td>
+                              </tr> -->
+                              <tr align="center" valign="center">
+                                <!-- <td><a data-hs-link-id="0" href="#" target="_blank"><img class="event-logo" src="" style="width: 100%; max-width: 417px; display: block;" width="417"></a></td> -->
+                              </tr>
+                              <tr class="spacer-9" style="height:45px; padding: 0 !important; margin: 0 !important; font-size: 0 !important; line-height: 0 !important;">
+                                <td>&nbsp;</td>
+                              </tr>
+                              <tr class="event-header-tr">
+                                <td class="event-header-td event-livestream-td"><a data-hs-link-id="1" href="#" target="_blank"><img class="event-header-livestream" src="images/dummy-logo.svg" style="width: 100%; max-width: 900px; display: block;" width="900"></a></td>
+                              </tr>
+                              <tr class="spacer-8" style="height:40px; padding: 0 !important; margin: 0 !important; font-size: 0 !important; line-height: 0 !important;">
+                                <td>&nbsp;</td>
+                              </tr>
+                              <tr class="partners-tr">
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table align="center" border="0" cellpadding="0" cellspacing="0" class="event-details-module" summary="event-details-module" width="100%">
+            <tbody>
+              <tr>
+                <td align="center" valign="top">
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" class="outer-table" style="width:100%; max-width:820px; Margin:0 auto" summary="outer-table" width="100%">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <table align="center" border="0" cellpadding="0" cellspacing="0" class="inner-table" style="width:85.37%; max-width:700px; Margin:0 auto" summary="inner-table" width="85.37%">
+                            <tbody>
+                              <tr>
+                                <td></td>
+                              </tr>
+                              <tr class="spacer-1" style="height:65px; padding: 0 !important; margin: 0 !important; font-size: 0 !important; line-height: 0 !important;">
+                                <td>&nbsp;</td>
+                              </tr>
+                              <tr class="invitation-event-tr">
+                                <td>
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" class="event-info-table" style="width:100%;max-width:490px;Margin: 0 auto;" summary="event-info-table">
+                                    <tbody>
+                                      <tr align="left" class="event-info-table-tr" valign="top">
+                                        <td width="40%">
+                                          <table align="center" border="0" cellpadding="0" cellspacing="0" class="event-info-table-left" style="width:100%;max-width:221px;Margin: 0 auto;" summary="event-info-table-left">
+                                            <tbody>
+                                              <tr valign="top">
+                                                <td>
+                                                  <a class="design-plus-cta-href" data-hs-link-id="0" href="images/dummy-logo.svg" target="_blank"></a>
+                                                  <table align="left" border="0" cellpadding="0" cellspacing="0" class="rsvp-now-cta" style="width:100.00%;max-width:188px;Margin-right: auto;" summary="rsvp-now-cta">
+                                                    <tbody>
+                                                  <a href="https://t.me/+z-2h1H7qaLtkMzYx" target="_blank">    <tr>
+                                                        <td align="center" class="text" style="width: 76.06%;background: #1eeb92;" valign="middle">
+                                                          <p class="cta-text" style="margin-bottom: 1em; font-family:'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#000; Margin-bottom:0; letter-spacing:0.08em; font-weight:800; font-size:12px; Margin-top:3px">LAUNCH APP</p>
+                                                        </td>
+                                                        <td align="center" class="symbol" style="width: 23.94%;background: white;" valign="middle"><a data-hs-link-id="1" href="https://swap.dummy.finance" target="_blank"><img class="image" src="images/btn-plus.png" style="width: 100%; max-width: 45px; Margin: 0 auto;" width="45"></a></td>
+                                                      </tr></a>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                              <tr class="event-info-spacer" style="height:50px; padding: 0 !important; margin: 0 !important; font-size: 0 !important; line-height: 0 !important;">
+                                                <td>&nbsp;</td>
+                                              </tr>
+                                              <tr align="left" valign="top">
+                                                <td class="event-info-section">
+                                                  <p class="detail-one" style="margin-bottom: 1em; font-family:'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; Margin-top:0; color:#1eeb92; letter-spacing:0.2em; font-size:13px; line-height:13px; font-weight:700; Margin-bottom:10px"><span class="blackout" style="background:hsla(0, 0%, 0%, 0.55); padding:0px">WHAT'S NEW</span></p>
+                                                    <p class="detail-desc" style="margin-bottom: 1em; font-family:'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; Margin-top:0; color:#8a959e; font-weight:800; letter-spacing:0.16em; font-size:10px; Margin-bottom:16px"><span class="blackout" style="background:hsla(0, 0%, 0%, 0.55); padding:0px">[02/18/22]</span></p>
+                                                  <p class="detail-two" style="margin-bottom: 1em; font-family:'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#ffffff; font-weight:500; Margin-top:0; Margin-bottom:0; font-size:13px; letter-spacing:0.21em"><span class="blackout" style="background:hsla(0, 0%, 0%, 0.55); padding:0px; color:#ffffff !important"><a href="https://dexscreener.com/telos/0x14c5ce09a3a313c78e5a4354f88a97b2414c39e1" style="color:#ffffff !important" target="_blank">-dummySWAP v1.0 launched<br><br> - dummy☻DAO token released on omnidex.finance.</a></span></p>
+                                                  <br>
+                                                  <p class="detail-desc" style="margin-bottom: 1em; font-family:'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; Margin-top:0; color:#8a959e; font-weight:800; letter-spacing:0.16em; font-size:10px; Margin-bottom:16px"><span class="blackout" style="background:hsla(0, 0%, 0%, 0.55); padding:0px">[02/20/22]</span></p>
+                                                  <p class="detail-two" style="margin-bottom: 1em; font-family:'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#ffffff; font-weight:500; Margin-top:0; Margin-bottom:0; font-size:13px; letter-spacing:0.21em"><span class="blackout" style="background:hsla(0, 0%, 0%, 0.55); padding:0px; color:#ffffff !important"><a href="https://dexscreener.com/telos/0xf5e3785f5bbe0520a059d94590f0135b8ecbe894" style="color:#ffffff !important" target="_blank">-HAPPY☻ + ZAP farming token released on zappy.finance</a></span></p>
+                                                </td>
+                                              </tr>
+                                              <tr class="event-info-spacer" style="height:50px; padding: 0 !important; margin: 0 !important; font-size: 0 !important; line-height: 0 !important;">
+                                                <td>&nbsp;</td>
+                                              </tr>
+
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                        <td class="spacer-2" width="10%">&nbsp;</td>
+                                        <td class="event-paragraphs" width="50%">
+                                          <p><strong>Hello dummy ☻,<br>
+                                            Join us in creating a new DEFI protocol only on Telos🟣.
+                                              Our mission is to create fun, and sometimes innovative dummy☻DAPPs that show off the Telos EVM, while also encouraging $TLOS adoption and trading volume.</p>
+                                              <p> more details coming soon...</p>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr class="spacer-3" style="height:60px; padding: 0 !important; margin: 0 !important; font-size: 0 !important; line-height: 0 !important;">
+                                <td>&nbsp;</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table align="center" border="0" cellpadding="0" cellspacing="0" class="panelists-module" summary="panelists-module" width="100%">
+            <tbody>
+              <tr>
+                <td align="center" valign="top">
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" class="outer-table" style="width:100%; max-width:820px; Margin:0 auto" summary="outer-table" width="100%">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <table align="center" border="0" cellpadding="0" cellspacing="0" class="inner-table" style="width:85.37%; max-width:700px; Margin:0 auto" summary="inner-table" width="85.37%">
+                            <tbody>
+                              <tr>
+                                <td></td>
+                              </tr>
+                              <tr>
+
+          <table align="center" border="0" cellpadding="0" cellspacing="0" class="extra-cta-module" summary="extra-cta-module" width="100%">
+            <tbody>
+              <tr>
+                <td align="center" valign="top">
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" class="outer-table" style="width:100%; max-width:820px; Margin:0 auto" summary="outer-table" width="100%">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <table align="center" border="0" cellpadding="0" cellspacing="0" class="inner-table" style="width:85.37%; max-width:700px; Margin:0 auto" summary="inner-table" width="85.37%">
+                            <tbody>
+                              <tr>
+                                <td><!-- custom widget definition not found --></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table align="center" border="0" cellpadding="0" cellspacing="0" class="footer-module" summary="footer-module" width="100%">
+            <tbody>
+              <tr>
+                <td align="center" valign="top">
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" class="outer-table" style="width:100%; max-width:820px; Margin:0 auto" summary="outer-table" width="100%">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <table align="center" border="0" cellpadding="0" cellspacing="0" class="inner-table" style="width:85.37%; max-width:700px; Margin:0 auto" summary="inner-table" width="85.37%">
+                            <tbody>
+                              <tr>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <center>
+
+                                        <p>dummy☻DAO $DMMY</p>
+                                        <p class="detail-one" style="margin-bottom: 1em; font-family:'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; Margin-top:0; color:#1eeb92; letter-spacing:0.2em; font-size:13px; line-height:13px; font-weight:700; Margin-bottom:10px"><span class="blackout" style="background:hsla(0, 0%, 0%, 0.55); padding:20px">0x2f15F85a6c346C0a2514Af70075259e503E7137B</span></p>
+                                        <p class="detail-two" style="margin-bottom: 1em; font-family:'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#ffffff; font-weight:500; Margin-top:0; Margin-bottom:0; font-size:13px; letter-spacing:0.21em"><span class="blackout" style="background:hsla(0, 0%, 0%, 0.55); padding:0px; color:#ffffff !important"></span></p>
+                                        <br><br>
+                                        <p>HAPPY☻ $DMMY</p>
+                                        <p class="detail-one" style="margin-bottom: 1em; font-family:'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; Margin-top:0; color:#1eeb92; letter-spacing:0.2em; font-size:13px; line-height:13px; font-weight:700; Margin-bottom:10px"><span class="blackout" style="background:hsla(0, 0%, 0%, 0.55); padding:20px">0x60087dF78326E46B2b6424e762b4EF6f9F8Ab5b8</span></p>
+                                        <p class="detail-two" style="margin-bottom: 1em; font-family:'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#ffffff; font-weight:500; Margin-top:0; Margin-bottom:0; font-size:13px; letter-spacing:0.21em"><span class="blackout" style="background:hsla(0, 0%, 0%, 0.55); padding:0px; color:#ffffff !important"></span></p>
+
+                                    <p class="footer-header" style="padding-top:60px;margin-bottom: 1em; font-family: 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; Margin-top:0; Margin-bottom:0; font-weight:600; letter-spacing:0.14em; font-size:13px; color:#ffffff">☻</p>
+                                  </center>
+                                </td>
+                              </tr>
+                              <tr class="spacer-2" style="height:40px; padding: 0 !important; margin: 0 !important; font-size: 0 !important; line-height: 0 !important;">
+                                <td>&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" style="Margin: auto;" width="220">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center" width="60"><a class="btn-footer-facebook" data-hs-link-id="0" href="https://t.me/+9C9ZaasqAGBmOTUx" style="width:60px; height:60px; display:block; background:url(images/telegram.png) top center/ 100%" target="_blank">&nbsp; <!--[if (gte mso 9)|(IE)]><img width="60 " height="60 " src="http://get.invisionapp.com/hubfs/email/events/designplus/facebook-2x.png "><![endif]--></a></td>
+                                        <td style="width:20px;" width="20">&nbsp;</td>
+                                        <td align="center" width="60"><a class="btn-footer-twitter" data-hs-link-id="0" href="https://discord.gg/THN8nmYwJe" style="width:60px; height:60px; display:block; background:url(images/discord.png) top center/ 100%" target="_blank">&nbsp; <!--[if (gte mso 9)|(IE)]><img width="60 " height="60 " src="http://get.invisionapp.com/hubfs/email/events/designplus/twitter-2x.png "><![endif]--></a></td>
+                                        <td style="width:20px;" width="20">&nbsp;</td>
+                                        <td align="center" width="60"><a target="_blank" href="https://twitter.com/dummy_finance"><img src="images/twitter.png" width="60px" color="white"></a></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr class="spacer-1" style="height:50px; padding: 0 !important; margin: 0 !important; font-size: 0 !important; line-height: 0 !important;">
+                                <td>&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <center>
+                                    <p class="footer-header" style="margin-bottom: 1em; font-family: 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; Margin-top:0; Margin-bottom:0; font-weight:600; letter-spacing:0.14em; font-size:13px; color:#ffffff"></p>
+                                  </center>
+                                </td>
+                              </tr>
+                              <tr class="spacer-2" style="height:40px; padding: 0 !important; margin: 0 !important; font-size: 0 !important; line-height: 0 !important;">
+                                <td>&nbsp;</td>
+                              </tr>
+                              <tr align="center">
+                                <td align="center" class="footer-links" style="font-family: 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:500; margin:0; font-size:13px; line-height:13px; color:#8a959e !important">
+                                  <center>
+                                    <a data-hs-link-id="0" href="https://twitter.com/dummy_finance" style="color:#8a959e !important;text-decoration:none !important;" target="_blank">@dummy_finance</a><span style="Margin-left:10px;Margin-right:10px;">&nbsp;|&nbsp;</span><a data-hs-link-id="0" href="#" style="color:#8a959e !important;text-decoration:none !important;" target="_blank">dummyfinance@protonmail.com</a>
+                                  </center>
+                                </td>
+                              </tr>
+                              <tr class="spacer-2-alt" style="height:20px; padding: 0 !important; margin: 0 !important; font-size: 0 !important; line-height: 0 !important;">
+                                <td>&nbsp;</td>
+                              </tr>
+                              <tr align="center">
+                                <td align="center" class="footer-links" style="font-family: 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:500; margin:0; font-size:13px; line-height:13px; color:#8a959e !important">
+                                  <p style="margin-bottom: 1em; font-family: 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; Margin-top:0; Margin-bottom:0; letter-spacing:0.08em; color:#8a959e !important; text-decoration:none !important; font-size:10px; font-weight:400"></p>
+                                </td>
+                              </tr>
+                              <tr class="spacer-3" style="height:60px; padding: 0 !important; margin: 0 !important; font-size: 0 !important; line-height: 0 !important;">
+                                <td>&nbsp;</td>
+                              </tr>
+                              <tr align="center" valign="center">
+                                <td>
+                                  <center>
+                                    <a data-hs-link-id="0" href="" target="_blank"><img class="footer-logo" src="images/dummy.png" style="width: 100%; max-width: 36px; margin: auto;" width="36"></a>
+                                  </center>
+                                </td>
+                              </tr>
+                              <tr class="spacer-4" style="height:100px; padding: 0 !important; margin: 0 !important; font-size: 0 !important; line-height: 0 !important;">
+                                <td>&nbsp;</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- END LIQUID WRAPPER -->
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <center><img src="https://hitwebcounter.com/counter/counter.php?page=7946337&style=0025&nbdigits=5&type=page&initCount=1000" title="Free Counter" Alt="web counter"   border="0" /></a>
+</div></center><br><br><!-- end coded_template: id:3920123631 path:custom/email/events/design-plus-invitation-and-reminder.html -->
 </body>
 </html>
