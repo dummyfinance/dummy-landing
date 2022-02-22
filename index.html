@@ -24,6 +24,16 @@ TEMPORARY SITE!!! SHITTY SOURCE CODE
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="asset-manifest.json"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+</script>
   <style type="text/css">
 
        html, html a {
@@ -33,6 +43,24 @@ TEMPORARY SITE!!! SHITTY SOURCE CODE
            font-smoothing: antialiased !important;
        }
 
+      button{
+        background:black;
+        color:white;
+        border:1px solid white;
+        border-radius: 10px;
+        padding:2px 6px 4px 6px;
+        opacity:.4;
+        margin-top:-15px;
+      }
+
+      button:hover{
+        opacity:1;
+      }
+
+      button:active{
+        background:white;
+        colore:black;
+      }
 
        table {border-collapse:separate;}
 
@@ -335,11 +363,11 @@ TEMPORARY SITE!!! SHITTY SOURCE CODE
                                   <center>
 
                                         <p>dummy☻DAO $DMMY</p>
-                                        <p class="detail-one" style="margin-bottom: 1em; font-family:'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; Margin-top:0; color:#1eeb92; letter-spacing:0.2em; font-size:13px; line-height:13px; font-weight:700; Margin-bottom:10px"><span class="blackout" style="background:hsla(0, 0%, 0%, 0.55); padding:20px">0x2f15F85a6c346C0a2514Af70075259e503E7137B</span></p>
+                                        <p class="detail-one" style="margin-bottom: 1em; font-family:'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; Margin-top:0; color:#1eeb92; letter-spacing:0.2em; font-size:13px; line-height:13px; font-weight:700; Margin-bottom:10px"><span class="blackout" id="text1" style="background:hsla(0, 0%, 0%, 0.55); padding:20px">0x2f15F85a6c346C0a2514Af70075259e503E7137B <button onclick="copyToClipboard('#text1')">copy</button></span></p>
                                         <p class="detail-two" style="margin-bottom: 1em; font-family:'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#ffffff; font-weight:500; Margin-top:0; Margin-bottom:0; font-size:13px; letter-spacing:0.21em"><span class="blackout" style="background:hsla(0, 0%, 0%, 0.55); padding:0px; color:#ffffff !important"></span></p>
                                         <br><br>
                                         <p>HAPPY☻ $HAPPY</p>
-                                        <p class="detail-one" style="margin-bottom: 1em; font-family:'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; Margin-top:0; color:#1eeb92; letter-spacing:0.2em; font-size:13px; line-height:13px; font-weight:700; Margin-bottom:10px"><span class="blackout" style="background:hsla(0, 0%, 0%, 0.55); padding:20px">0x60087dF78326E46B2b6424e762b4EF6f9F8Ab5b8</span></p>
+                                        <p class="detail-one" style="margin-bottom: 1em; font-family:'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; Margin-top:0; color:#1eeb92; letter-spacing:0.2em; font-size:13px; line-height:13px; font-weight:700; Margin-bottom:10px"><span class="blackout" id="text2" style="background:hsla(0, 0%, 0%, 0.55); padding:20px">0x60087dF78326E46B2b6424e762b4EF6f9F8Ab5b8 <button onclick="copyToClipboard('#text2')">copy</button></span></p>
                                         <p class="detail-two" style="margin-bottom: 1em; font-family:'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#ffffff; font-weight:500; Margin-top:0; Margin-bottom:0; font-size:13px; letter-spacing:0.21em"><span class="blackout" style="background:hsla(0, 0%, 0%, 0.55); padding:0px; color:#ffffff !important"></span></p>
 
                                     <p class="footer-header" style="padding-top:60px;margin-bottom: 1em; font-family: 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; Margin-top:0; Margin-bottom:0; font-weight:600; letter-spacing:0.14em; font-size:13px; color:#ffffff"></p>
